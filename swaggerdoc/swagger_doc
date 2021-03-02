@@ -1,0 +1,237 @@
+{
+	"_type": "document",
+	"_meta": {
+		"url": "http://localhost:8000/swaggerdoc/",
+		"title": "Swagger docs emp"
+	},
+	"projectapi": {
+		"list": {
+			"_type": "link",
+			"url": "/projectapi/",
+			"action": "get"
+		},
+		"create": {
+			"_type": "link",
+			"url": "/projectapi/",
+			"action": "post",
+			"encoding": "application/json",
+			"fields": [
+				{
+					"name": "project_name",
+					"required": true,
+					"location": "form",
+					"schema": {
+						"_type": "string",
+						"title": "Project name",
+						"description": ""
+					}
+				},
+				{
+					"name": "text",
+					"required": true,
+					"location": "form",
+					"schema": {
+						"_type": "string",
+						"title": "Text",
+						"description": ""
+					}
+				},
+				{
+					"name": "translate_to_language",
+					"required": true,
+					"location": "form",
+					"schema": {
+						"_type": "string",
+						"title": "Translate to language",
+						"description": ""
+					}
+				},
+				{
+					"name": "user",
+					"required": true,
+					"location": "form",
+					"schema": {
+						"_type": "string",
+						"title": "User",
+						"description": ""
+					}
+				},
+				{
+					"name": "added_by",
+					"required": true,
+					"location": "form",
+					"schema": {
+						"_type": "integer",
+						"title": "Added by",
+						"description": ""
+					}
+				}
+			]
+		},
+		"read": {
+			"_type": "link",
+			"url": "/projectapi/{id}/",
+			"action": "get",
+			"fields": [
+				{
+					"name": "id",
+					"required": true,
+					"location": "path",
+					"schema": {
+						"_type": "integer",
+						"title": "ID",
+						"description": "A unique integer value identifying this project."
+					}
+				}
+			]
+		},
+		"update": {
+			"_type": "link",
+			"url": "/projectapi/{id}/",
+			"action": "put",
+			"encoding": "application/json",
+			"fields": [
+				{
+					"name": "id",
+					"required": true,
+					"location": "path",
+					"schema": {
+						"_type": "integer",
+						"title": "ID",
+						"description": "A unique integer value identifying this project."
+					}
+				},
+				{
+					"name": "project_name",
+					"required": true,
+					"location": "form",
+					"schema": {
+						"_type": "string",
+						"title": "Project name",
+						"description": ""
+					}
+				},
+				{
+					"name": "text",
+					"required": true,
+					"location": "form",
+					"schema": {
+						"_type": "string",
+						"title": "Text",
+						"description": ""
+					}
+				},
+				{
+					"name": "translate_to_language",
+					"required": true,
+					"location": "form",
+					"schema": {
+						"_type": "string",
+						"title": "Translate to language",
+						"description": ""
+					}
+				},
+				{
+					"name": "user",
+					"required": true,
+					"location": "form",
+					"schema": {
+						"_type": "string",
+						"title": "User",
+						"description": ""
+					}
+				},
+				{
+					"name": "added_by",
+					"required": true,
+					"location": "form",
+					"schema": {
+						"_type": "integer",
+						"title": "Added by",
+						"description": ""
+					}
+				}
+			]
+		},
+		"partial_update": {
+			"_type": "link",
+			"url": "/projectapi/{id}/",
+			"action": "patch",
+			"encoding": "application/json",
+			"fields": [
+				{
+					"name": "id",
+					"required": true,
+					"location": "path",
+					"schema": {
+						"_type": "integer",
+						"title": "ID",
+						"description": "A unique integer value identifying this project."
+					}
+				},
+				{
+					"name": "project_name",
+					"location": "form",
+					"schema": {
+						"_type": "string",
+						"title": "Project name",
+						"description": ""
+					}
+				},
+				{
+					"name": "text",
+					"location": "form",
+					"schema": {
+						"_type": "string",
+						"title": "Text",
+						"description": ""
+					}
+				},
+				{
+					"name": "translate_to_language",
+					"location": "form",
+					"schema": {
+						"_type": "string",
+						"title": "Translate to language",
+						"description": ""
+					}
+				},
+				{
+					"name": "user",
+					"location": "form",
+					"schema": {
+						"_type": "string",
+						"title": "User",
+						"description": ""
+					}
+				},
+				{
+					"name": "added_by",
+					"location": "form",
+					"schema": {
+						"_type": "integer",
+						"title": "Added by",
+						"description": ""
+					}
+				}
+			]
+		},
+		"delete": {
+			"_type": "link",
+			"url": "/projectapi/{id}/",
+			"action": "delete",
+			"fields": [
+				{
+					"name": "id",
+					"required": true,
+					"location": "path",
+					"schema": {
+						"_type": "integer",
+						"title": "ID",
+						"description": "A unique integer value identifying this project."
+					}
+				}
+			]
+		}
+	}
+}
